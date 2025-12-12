@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteCraft – Recipe Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>TasteCraft</h1>
+    <input type="text" id="searchBar" placeholder="Search recipes...">
+</header>
+
+<main>
+    <section class="form-section">
+        <h2>Add New Recipe</h2>
+        <form id="recipeForm">
+            <input type="text" id="title" placeholder="Recipe Title" required>
+            <textarea id="ingredients" placeholder="Ingredients (comma-separated)" required></textarea>
+            <input type="number" id="calories" placeholder="Calories" required>
+            <button type="submit">Add Recipe</button>
+        </form>
+    </section>
+
+    <section class="recipe-section">
+        <h2>Your Recipes</h2>
+        <div id="recipeList"></div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
